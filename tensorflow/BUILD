@@ -469,6 +469,12 @@ config_setting(
 )
 
 config_setting(
+    name = "no_prisma_support",
+    define_values = {"no_prisma_support": "true"},
+    visibility = ["//visibility:public"],
+)
+
+config_setting(
     name = "no_gcp_support",
     define_values = {"no_gcp_support": "true"},
     visibility = ["//visibility:public"],
